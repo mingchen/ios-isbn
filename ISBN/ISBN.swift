@@ -84,7 +84,6 @@ public class ISBN {
 
         for i in 0..<12 {
             if let intCharacter = Int(String(input[input.index(input.startIndex, offsetBy: i)])) {
-                print("\(factor[i%2]) * \(intCharacter)")
                 checksum += factor[i % 2] * intCharacter
             }
         }
