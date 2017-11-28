@@ -15,7 +15,7 @@ import Foundation
 //    // Not a valid isbn code
 // }
 //
-class ISBN {
+public class ISBN {
     var code: String = ""
     static let isbn10_regex = try! NSRegularExpression(pattern: "[0-9]{9}[0-9xX]")
     static let isbn13_regex = try! NSRegularExpression(pattern: "[0-9]{13}")
