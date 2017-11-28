@@ -20,7 +20,7 @@ public class ISBN {
     static let isbn10_regex = try! NSRegularExpression(pattern: "[0-9]{9}[0-9xX]")
     static let isbn13_regex = try! NSRegularExpression(pattern: "[0-9]{13}")
 
-    init?(isbn10: String) {
+    public init?(isbn10: String) {
         if ISBN.isbn10_regex.matches(in: isbn10, range: NSRange(isbn10.startIndex..., in: isbn10)).count == 0 {
             return nil
         }
@@ -32,7 +32,7 @@ public class ISBN {
         }
     }
 
-    init?(isbn13: String) {
+    public init?(isbn13: String) {
         if ISBN.isbn13_regex.matches(in: isbn13, range: NSRange(isbn13.startIndex..., in: isbn13)).count == 0 {
             return nil
         }
@@ -44,15 +44,15 @@ public class ISBN {
         }
     }
 
-    func isISBN10() -> Bool {
+    public func isISBN10() -> Bool {
         return code.count == 10
     }
 
-    func isISBN13() -> Bool {
+    public func isISBN13() -> Bool {
         return code.count == 13
     }
 
-    var description: String {
+    public var description: String {
         return code
     }
 
