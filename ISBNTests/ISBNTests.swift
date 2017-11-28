@@ -2,8 +2,7 @@
 //  ISBNTests.swift
 //  ISBNTests
 //
-//  Created by Ming Chen on 11/14/17.
-//  Copyright © 2017 ISBN. All rights reserved.
+//  Copyright © 2017 Ming Chen. All rights reserved.
 //
 
 import XCTest

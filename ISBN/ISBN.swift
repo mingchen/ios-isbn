@@ -2,7 +2,6 @@
 //  ISBN.swift
 //  ISBN
 //
-//  Created by Ming Chen on 11/14/17.
 //  Copyright © 2017 Ming Chen. All rights reserved.
 //
 
