@@ -16,9 +16,10 @@ import Foundation
 // }
 //
 public class ISBN {
-    var code: String = ""
     static let isbn10_regex = try! NSRegularExpression(pattern: "[0-9]{9}[0-9xX]")
     static let isbn13_regex = try! NSRegularExpression(pattern: "[0-9]{13}")
+
+    public var code: String = ""
 
     public init?(isbn10: String) {
         if ISBN.isbn10_regex.matches(in: isbn10, range: NSRange(isbn10.startIndex..., in: isbn10)).count == 0 {
